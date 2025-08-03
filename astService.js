@@ -19,6 +19,6 @@ class SqlAstParser {
     }
 }
 
-const data = new SqlAstParser(tokenize, syntaxCheck, buildSelectNode).parse("SELECT 56 AS \"fifty six!\", FALSE AS \"🚫\", 0 AS \"this is \"\"nothing\"\"?\";")
-console.log(data);
+const data = new SqlAstParser(tokenize, syntaxCheck, buildSelectNode)
+
 module.exports = SqlAstParser;

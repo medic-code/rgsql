@@ -13,7 +13,6 @@ class MessageBuffer extends EventEmitter {
         while ((idx = this.buffer.indexOf(this.delimiter)) !== -1) {
             const msgBuf = this.buffer.slice(0, idx);
             const msg = msgBuf.toString('utf-8');
-            console.log(msg);
             this.emit('message', msg);
             this.buffer = this.buffer.slice(idx + this.delimiter.length);
         }
