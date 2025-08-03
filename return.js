@@ -1,5 +1,5 @@
 function returnSQL(astResult) {
-    console.log(astResult, 'ast')
+
     const errorResult = astResult.find(r => r.status === 'error')
     if (errorResult) {
         return { status: 'error', ...errorResult };
