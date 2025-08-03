@@ -31,5 +31,4 @@ server.listen(3003, () => {
             client.write(input + '\0')
         }
     })
-
 })
